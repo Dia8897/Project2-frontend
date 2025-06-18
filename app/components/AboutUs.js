@@ -1,0 +1,51 @@
+'use client';
+
+export default function AboutUs() {
+  return (
+    <section className="bg-gray-50 py-24 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        
+        {/* Left Image */}
+        <div className="relative overflow-hidden rounded-2xl shadow-xl max-w-md mx-auto md:mx-0 group">
+          <img
+            src="/images/About.jpg"
+            alt="Beautiful Lebanese forest"
+            className="w-full h-[300px] object-cover object-center transform transition-transform duration-500 group-hover:scale-105 rounded-2xl"
+            loading="lazy"
+          />
+          {/* Optional overlay for depth */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl group-hover:opacity-75 transition-opacity duration-500" />
+        </div>
+
+        {/* Right Content */}
+        <div className="text-center md:text-left">
+          <p className="text-blue-600 font-semibold uppercase tracking-wide mb-3">
+            Who We Are
+          </p>
+          <h2 className="text-4xl font-extrabold text-gray-900 mb-6 leading-tight">
+            Sharing the Magic of Lebanon
+          </h2>
+
+          <p className="text-lg text-gray-700 mb-5 leading-relaxed">
+            We’re passionate storytellers and travel enthusiasts dedicated to highlighting Lebanon’s rich culture, hidden gems, and breathtaking landscapes. 
+          </p>
+
+          <ul className="space-y-3 text-left text-gray-600">
+            <li className="flex items-start gap-2">
+              <span className="text-blue-600 mt-1">✔</span>
+              Authentic & curated travel insights
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-blue-600 mt-1">✔</span>
+              Hidden spots, iconic places, and local tips
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-blue-600 mt-1">✔</span>
+              Your trusted companion for unforgettable journeys
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}

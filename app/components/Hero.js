@@ -3,56 +3,37 @@
 export default function Hero() {
   return (
     <>
-      <section className="hero">
-        <div className="content">
-          <h1>Discover the Beauty of Lebanon</h1>
-          <p>Your ultimate guide from the majestic mountains to the sparkling Mediterranean coast.</p>
-          {/* You could add a call-to-action button here if you want */}
+       <section className="py-32 px-6 bg-white">
+      <div className="max-w-4xl mx-auto">
+        <div className="bg-white/60 backdrop-blur-md border border-gray-200 shadow-lg rounded-2xl px-10 py-16 text-center">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+            Discover the Beauty of Lebanon
+          </h1>
+
+          <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+            Your ultimate guide from the majestic mountains to the sparkling Mediterranean coast.
+          </p>
+
+          <div className="flex justify-center gap-4 flex-wrap">
+            <a
+              href="#destinations"
+              className="bg-blue-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 shadow"
+            >
+              Explore Destinations
+            </a>
+            <a
+              href="#about"
+              className="text-blue-700 border border-blue-600 font-medium py-3 px-6 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300"
+            >
+              Learn More
+            </a>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <style jsx>{`
-        .hero {
-          background: linear-gradient(
-              rgba(0, 51, 102, 0.45),
-              rgba(0, 51, 102, 0.45)
-            ),
-            url('images/Lebanon.jpg');
-          background-position: center;
-          background-size: cover;
-          color: #f0f5fb;
-          padding: 6rem 1.5rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          border-radius: 12px;
-          max-width: 1100px;
-          margin: 2rem auto;
-          box-shadow: 0 8px 20px rgba(0, 51, 102, 0.2);
-        }
+      {/* <style jsx>{`
 
-        .content {
-          max-width: 700px;
-        }
-
-        h1 {
-          font-size: 3rem;
-          font-weight: 700;
-          margin-bottom: 1rem;
-          line-height: 1.1;
-          text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-        }
-
-        p {
-          font-size: 1.3rem;
-          font-weight: 400;
-          line-height: 1.5;
-          max-width: 600px;
-          margin: 0 auto;
-          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-        }
 
         @media (max-width: 600px) {
           .hero {
@@ -66,7 +47,7 @@ export default function Hero() {
             font-size: 1rem;
           }
         }
-      `}</style>
+      `}</style> */}
     </>
   );
 }

@@ -29,92 +29,34 @@ export default function Places() {
   ];
 
   return (
-    <>
-      <section className="places">
-        <h2>Top Destinations</h2>
-        <div className="cards">
-          {places.map(({ name, emoji, description, image }) => (
-            <div key={name} className="card">
-              <img src={image} alt={name} />
-              <div className="card-content">
-                <h3>{emoji} {name}</h3>
-                <p>{description}</p>
-              </div>
+    <section className="px-4 py-8 max-w-5xl mx-auto">
+      <h2 className="text-center text-[#003366] font-sans text-2xl mb-8">
+        Top Destinations
+      </h2>
+
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-7">
+        {places.map(({ name, emoji, description, image }) => (
+          <div
+            key={name}
+            className="bg-gray-50 rounded-xl shadow-md overflow-hidden flex flex-col cursor-pointer
+                       transition-transform duration-300 ease-in-out hover:-translate-y-1.5 hover:shadow-lg"
+          >
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-40 sm:h-40 object-cover"
+            />
+            <div className="p-4 flex flex-col justify-center flex-grow">
+              <h3 className="mb-2 text-[#003366] font-bold font-sans text-lg">
+                {emoji} {name}
+              </h3>
+              <p className="text-gray-600 text-base leading-snug">
+                {description}
+              </p>
             </div>
-          ))}
-        </div>
-      </section>
-
-      <style jsx>{`
-        .places {
-          padding: 2rem 1rem;
-          max-width: 1000px;
-          margin: 0 auto;
-        }
-        h2 {
-          text-align: center;
-          color: #003366;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          margin-bottom: 2rem;
-          font-size: 2rem;
-        }
-        .cards {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-          gap: 1.8rem;
-        }
-        .card {
-          background: #f9fafb;
-          border-radius: 12px;
-          box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-          cursor: pointer;
-        }
-        .card:hover {
-          transform: translateY(-6px);
-          box-shadow: 0 8px 20px rgba(0, 51, 102, 0.25);
-        }
-        .card img {
-          width: 100%;
-          height: 160px;
-          object-fit: cover;
-        }
-        .card-content {
-          padding: 1rem 1.2rem;
-          flex-grow: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-        }
-        .card-content h3 {
-          margin: 0 0 0.5rem 0;
-          font-size: 1.2rem;
-          color: #003366;
-          font-weight: 700;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .card-content p {
-          margin: 0;
-          font-size: 1rem;
-          color: #555;
-          line-height: 1.3;
-        }
-
-        @media (max-width: 480px) {
-          .card img {
-            height: 140px;
-          }
-          .card-content h3 {
-            font-size: 1.1rem;
-          }
-          .card-content p {
-            font-size: 0.9rem;
-          }
-        }
-      `}</style>
-    </>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
