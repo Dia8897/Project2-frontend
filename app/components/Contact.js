@@ -7,7 +7,7 @@ export default function Contact() {
         className="
         bg-gray-50
         p-12
-        max-w-[1000px]
+        max-w-7xl
         mx-auto
         my-12
         rounded-xl
