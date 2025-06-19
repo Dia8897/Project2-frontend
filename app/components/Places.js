@@ -75,7 +75,7 @@ export default function Places() {
             <img
               src={image}
               alt={name}
-              className="w-full md:h-40 sm:h-20 object-cover"
+              className="w-full md:h-35 sm:h-20 object-cover"
             />
             <div className="p-4 flex flex-col justify-center flex-grow">
               <h3 className="mb-2 text-[#003366] font-bold font-sans text-lg">
