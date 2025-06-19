@@ -2,7 +2,7 @@
 
 export default function AboutUs() {
   return (
-    <section className="bg-gray-50 max-w-7xl mx-auto rounded-3xl py-24 px-6">
+    <section className="bg-gray-50 max-w-5xl mx-auto rounded-3xl py-24 px-6">
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div className="relative overflow-hidden rounded-2xl shadow-xl max-w-md mx-auto md:mx-0 group">
           <img
