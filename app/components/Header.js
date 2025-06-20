@@ -26,12 +26,12 @@ export default function Header() {
             menuOpen ? 'flex' : 'hidden'
           } sm:flex flex-col sm:flex-row w-full sm:w-auto gap-4 sm:gap-6 bg-[#003060] sm:bg-transparent rounded-lg px-6 py-4 sm:p-0`}
         >
-          {['home', 'destinations', 'tours', 'contact'].map((section) => (
+          {['About Us', 'Destinations', 'Contact Us'].map((section) => (
             <a
               key={section}
               href={`#${section}`}
               onClick={() => setMenuOpen(false)}
-              className="text-gray-100 font-semibold text-base px-3 py-2 rounded-md hover:bg-blue-600 transition"
+              className="text-gray-100 font-semibold text-base px-3 py-2 rounded-md hover:bg-[#0055aa] transition"
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </a>
