@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-[#003366] text-white sticky top-0 z-50 py-6 px-8">
+      <header className="bg-sky-800 text-white sticky top-0 z-50 py-6 px-8">
       <div className="max-w-[1200px] mx-auto flex flex-wrap items-center gap-4">
         <div className="text-3xl select-none">🌍</div>
         <h1 className="text-2xl sm:text-3xl font-bold tracking-wide text-shadow-sm flex-grow text-center sm:text-left">
@@ -24,14 +24,14 @@ export default function Header() {
         <nav
           className={`${
             menuOpen ? 'flex' : 'hidden'
-          } sm:flex flex-col sm:flex-row w-full sm:w-auto gap-4 sm:gap-6 bg-[#003060] sm:bg-transparent rounded-lg px-6 py-4 sm:p-0`}
+          } sm:flex flex-col sm:flex-row w-full sm:w-auto gap-4 sm:gap-6 bg-sky-800 sm:bg-transparent rounded-lg px-6 py-4 sm:p-0`}
         >
           {['About Us', 'Destinations', 'Contact Us'].map((section) => (
             <a
               key={section}
               href={`#${section}`}
               onClick={() => setMenuOpen(false)}
-              className="text-gray-100 font-semibold text-base px-3 py-2 rounded-md hover:bg-[#0055aa] transition"
+              className="text-gray-100 font-semibold text-base px-3 py-2 rounded-md hover:bg-sky-600 hover:scale-105 transition"
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </a>

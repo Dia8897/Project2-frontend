@@ -3,7 +3,7 @@
 export default function Footer() {
   return (
     <>
-     <footer className="bg-[#003366] text-white text-center px-4 py-6 font-sans">
+     <footer className="bg-sky-800 text-white text-center px-4 py-6 font-sans">
       <div className="max-w-[900px] mx-auto">
         <div className="flex flex-col md:flex-row flex-wrap justify-center gap-8 text-base mb-3">
           <p className="m-0 select-none">

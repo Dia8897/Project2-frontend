@@ -61,12 +61,12 @@ export default function Places() {
 
   return (
     <section id="Destinations" className="bg-white">
-      <section className="x-4 py-8 max-w-5xl mx-auto">
-        <h2 className="text-center text-[#003366] font-sans text-5xl mb-8 font-bold">
+      <section className="px-4 py-8 md:max-w-5xl max-w-sm  mx-auto">
+        <h2 className="text-center text-sky-800 font-sans md:text-5xl text-2xl mb-8 font-extrabold">
           Top Destinations
         </h2>
 
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8">
+        <div className="grid md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
           {places.map(({ name, emoji, description, image }) => (
             <div
               key={name}
@@ -77,11 +77,11 @@ export default function Places() {
                 <img
                   src={image}
                   alt={name}
-                  className="w-full md:h-35 sm:h-20 object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                  className="w-full md:h-35 h-25 object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                 />
               </div>
               <div className="p-4 flex flex-col justify-center flex-grow">
-                <h3 className="mb-2 text-[#003366] font-bold font-sans text-lg">
+                <h3 className="mb-2 text-sky-700 font-bold font-sans text-lg">
                   {emoji} {name}
                 </h3>
                 <p className="text-gray-600 text-base leading-snug">
@@ -89,10 +89,10 @@ export default function Places() {
                 </p>
 
                 <div className=" flex gap-3 mt-5">
-                  <button className="bg-[#003366] text-white px-4 py-2 rounded-lg text-sm hover:bg-[#0055aa] transition cursor-pointer">
+                  <button className="bg-sky-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-sky-600 transition hover:scale-105 cursor-pointer">
                     Read More
                   </button>
-                  <button className="border border-blue-600 text-blue-700 px-4 py-2 rounded-lg text-sm ">
+                  <button className="border border-sky-600 text-sky-600 hover:scale-105 transition cursor-pointer px-4 py-2 rounded-lg text-sm ">
                     Book Now
                   </button>
                 </div>
