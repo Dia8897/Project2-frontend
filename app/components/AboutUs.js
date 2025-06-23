@@ -2,8 +2,8 @@
 
 export default function AboutUs() {
   return (
-    <section id="About Us" className="bg-white">
-      <section className="bg-gray-50 lg:w-5xl md:w-3xl sm:w-sm xs:w-2xs mx-auto rounded-3xl py-24 px-6 mb-25">
+    <section id="About Us" className="bg-gray-50">
+      <section className=" lg:w-5xl md:w-3xl sm:w-sm xs:w-2xs mx-auto rounded-3xl py-24 px-6 mb-25">
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="relative overflow-hidden rounded-2xl shadow-xl max-w-xs max-h-xs mx-auto md:mx-0 group">
             <img
